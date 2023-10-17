@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Relative Layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityIntent">
+
+    <!-- Edit text for phone number -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.7"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <!-- Button to make call -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:padding="5dp"
+        android:text="Make Call!!" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/urltxt"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="315dp"
+        android:alpha="0.7"
+        android:textSize="20dp"
+        android:padding="10dp" />
+    <Button
+        android:onClick="GetUrlFromIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Url"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="615dp"
+        android:onClick="ExitApp"
+        android:text="Exit App" />
+</RelativeLayout>
